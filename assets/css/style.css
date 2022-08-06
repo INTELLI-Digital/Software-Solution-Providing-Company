@@ -49,10 +49,13 @@
 .countDown_part .custom_width {
   max-width: 856px;
 }
-
+.service_provide .service_provide_slider .slick-list .slick-track {
+  display: flex !important;
+}
 .service_provide .service_provide_slider .service_provide_item {
   border: 0.5px solid rgba(116, 116, 116, 0.2);
   border-radius: 15px;
+  height: inherit !important;
 }
 
 .service_provide .service_provide_slider .slick-dots {
