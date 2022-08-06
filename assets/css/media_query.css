@@ -1,0 +1,178 @@
+@import url(common.css);
+
+@media screen and (max-width: 1348px) {
+}
+
+/* Laptopn screen  */
+
+@media only screen and (max-width: 1366px) and (min-width: 992px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .navbar .container {
+    flex-direction: row-reverse;
+  }
+  #navbar #navbarSupportedContent .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(21, 21, 21, 0.1);
+  }
+  #navbar #navbarSupportedContent .navbar-nav .nav-item .dropdown-menu.show {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    padding: 24px 10px;
+    left: 0%;
+    transform: translate(-0%, 0%);
+    -webkit-transform: translate(-0%, 0%);
+    -moz-transform: translate(-0%, 0%);
+    -ms-transform: translate(-0%, 0%);
+    -o-transform: translate(-0%, 0%);
+    box-shadow: none;
+  }
+  .logo_slider_part .logo_slider .slider_item img {
+    width: 100%;
+    height: 68px;
+  }
+  .countDown_part {
+    background: url("../images/count-down-bg/count_down-bg_mob.png") no-repeat
+      center;
+    background-size: cover;
+  }
+  .app_development .btn_part {
+    margin: 0 auto;
+  }
+  .platform_expert .platform-tabs .nav {
+    flex-wrap: nowrap;
+    gap: 26px;
+    overflow-x: auto;
+  }
+  .platform_expert .platform-tabs .nav button {
+    padding: 0px 0px 12px 0px;
+  }
+  .platform_expert .service-provide {
+    grid-template-columns: auto;
+  }
+  .case-studies .isotop-part .menu_iso {
+    flex-wrap: wrap;
+  }
+  .case-studies .isotop-part .menu_iso li a {
+    border-radius: 2px;
+  }
+  .about_gellary .service-provide {
+    grid-template-columns: repeat(1, auto);
+  }
+  .pricing_part .tab_part .nav {
+    gap: 8px;
+    justify-content: center;
+  }
+  .pricing_part .tab_part .nav li button {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px;
+  }
+  .car_parking_app .car_parking_slider .car_parking_slider_item:nth-child(odd) {
+    margin-top: 50px;
+  }
+  .car_parking .btn_part {
+    margin: 0 auto;
+  }
+  .car_parking .container .row {
+    padding: 40px 0px;
+  }
+  .car_parking .container .row .img img {
+    float: none !important;
+    margin: 0 auto;
+    display: flex;
+    max-width: 213.97px;
+    width: 100%;
+  }
+  .timeline:before {
+    width: 1px;
+    height: 100%;
+    left: 1.8%;
+    top: 1%;
+    transform: translate(-1.8%, 0%);
+    -webkit-transform: translate(-1.8%, 0%);
+    -moz-transform: translate(-1.8%, 0%);
+    -ms-transform: translate(-1.8%, 0%);
+    -o-transform: translate(-1.8%, 0%);
+  }
+  .timeline-horizontal .timeline-item .timeline-badge {
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, -0%);
+    -webkit-transform: translate(0%, -0%);
+    -moz-transform: translate(0%, -0%);
+    -ms-transform: translate(0%, -0%);
+    -o-transform: translate(0%, -0%);
+  }
+  .timeline-horizontal {
+    flex-direction: column;
+    padding-left: 0%;
+  }
+  .timeline-horizontal .timeline-item .timeline-panel {
+    padding-left: 5%;
+    margin-bottom: 0px;
+  }
+  .timeline .timeline-item .content {
+    padding-left: 5%;
+  }
+  .work_process .visitor {
+    flex-flow: column wrap;
+  }
+  .subscribe_part .bg {
+    padding: 73px 9px;
+  }
+  .client_part .client_part_slider .slick-dots li {
+    width: 5.01px;
+    height: 5.05px;
+  }
+  .client_part .client_part_slider .slick-dots li.slick-active {
+    width: 16.82px;
+  }
+  .subscribe_part .bg {
+    background: url(../images/about/about_bg_mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .subscribe_part button {
+    padding: 12px 29px;
+    margin-top: 82px;
+  }
+  #footer {
+    background: var(--footer);
+  }
+  .tiny_footer ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+}
+@media screen and (max-width: 575px) {
+  .timeline:before {
+    left: 2%;
+    transform: translateX(-3%);
+    -webkit-transform: translateX(-3%);
+    -moz-transform: translateX(-3%);
+    -ms-transform: translateX(-3%);
+    -o-transform: translateX(-3%);
+  }
+  .timeline-horizontal .timeline-item .timeline-panel {
+    padding-left: 10%;
+    margin-bottom: 0px;
+  }
+  .timeline .timeline-item .content {
+    padding-left: 10%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .timeline:before {
+    left: 3%;
+    transform: translateX(-3%);
+    -webkit-transform: translateX(-3%);
+    -moz-transform: translateX(-3%);
+    -ms-transform: translateX(-3%);
+    -o-transform: translateX(-3%);
+  }
+}
