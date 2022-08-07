@@ -934,9 +934,9 @@
   line-height: 24px;
   letter-spacing: -0.02em;
   color: #151515;
-  opacity: 0.2;
+  opacity: 0.62;
   background: #ffffff;
-  border: 1px solid rgba(24, 24, 24, 0.1);
+  border: 1px solid rgba(24, 24, 24, 0.61);
   border-radius: 10px;
 }
 
@@ -1033,34 +1033,164 @@
 
 /* mobile app development page */
 
-#button {
+/* #button {
   display: inline-block;
-  background-color: #1a64ee;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 4px;
   position: fixed;
   bottom: 30px;
   color: #fff;
   right: 30px;
+  width: 60px;
+  height: 60px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -moz-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -ms-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  overflow: hidden;
+}
+#button span {
+  background: #1a64ee;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#button p {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 0px;
+  height: 60px;
+  background: #4a89ff;
+  box-shadow: 0px 0px 30px rgb(132 132 132 / 39%);
+  border-radius: 36px;
+  position: absolute;
+  top: 0;
+  right: -0px;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  padding-left: 14px;
+  opacity: 0;
+  visibility: hidden;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -moz-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -ms-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+}
+#button:hover p {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 175px;
+  height: 60px;
+  background: #4a89ff;
+  box-shadow: 0px 0px 30px rgb(132 132 132 / 39%);
+  border-radius: 36px;
+  position: absolute;
+  top: 0;
+  left: -116px;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  padding-left: 14px;
+  opacity: 1;
+  visibility: visible;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -moz-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -ms-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
 }
 
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
 #button.show {
   opacity: 1;
   visibility: visible;
 }
+#button.show:hover {
+  opacity: 1;
+  visibility: visible;
+  overflow: auto;
+} */
+.social {
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+#button.social.show {
+  opacity: 1;
+  visibility: visible;
+}
+.social ul {
+  list-style: none;
+  padding: 0;
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
+}
+.social ul li {
+  background: #4a89ff;
+  width: 170px;
+  padding: 0px;
+  text-align: left;
+  border-radius: 30px 0px 0px 30px;
+  transition: all 1s;
+  -webkit-border-radius: 30px 0px 0px 30px;
+  -moz-border-radius: 30px 0px 0px 30px;
+  -ms-border-radius: 30px 0px 0px 30px;
+  -o-border-radius: 30px 0px 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social ul li:hover {
+  padding: 10px;
+  transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+}
+.social ul li#twitter:hover {
+  background-color: #1da1f2;
+}
 
+.social ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.social ul li span {
+  background: #1a64ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  transform: rotate(0deg);
+}
+.social ul li:hover span {
+  transform: rotate(360deg);
+  transition: all 1s;
+}
 /* Styles for the content section */
