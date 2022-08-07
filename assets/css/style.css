@@ -49,6 +49,13 @@
 .countDown_part .custom_width {
   max-width: 856px;
 }
+.countDown_part sup {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
 .service_provide .service_provide_slider .slick-list .slick-track {
   display: flex !important;
 }

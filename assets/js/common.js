@@ -143,6 +143,28 @@ $(document).ready(function() {
     ],
   });
 
+
+
+  // counter part
+  $(".counter-count").each(function () {
+    $(this)
+      .prop("Counter", 0)
+      .animate(
+        {
+          Counter: $(this).text()
+        },
+        {
+          //if you want to change counter speed then change duration
+          duration: 4000,
+          easing: "swing",
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        }
+      );
+  });
+  
+
   // external js: isotope.pkgd.js
 
 
