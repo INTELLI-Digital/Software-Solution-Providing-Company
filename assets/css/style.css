@@ -1029,18 +1029,38 @@
   text-transform: capitalize;
   color: #181818;
 }
-.car_parking .btn_part {
-}
-.car_parking .btn_part {
-}
-.car_parking .btn_part {
-}
-.car_parking .btn_part {
-}
-.car_parking .btn_part {
-}
-.car_parking .btn_part {
-}
 /* case study details */
 
 /* mobile app development page */
+
+#button {
+  display: inline-block;
+  background-color: #1a64ee;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  color: #fff;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
