@@ -168,6 +168,8 @@ $(document).ready(function() {
   // external js: isotope.pkgd.js
 
 
+// bottom to top scroll button
+
   var btn = $('#button');
 
 $(window).scroll(function() {
@@ -183,7 +185,7 @@ btn.on('click', function(e) {
   $('html, body').animate({scrollTop:0}, '300');
 });
 
-
+// bottom to top scroll button
 
 
   // isotop
