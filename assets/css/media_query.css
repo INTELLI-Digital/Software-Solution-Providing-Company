@@ -59,7 +59,7 @@
     border-radius: 2px;
   }
   .about_gellary .service-provide {
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(2, auto);
   }
   .pricing_part .tab_part .nav {
     gap: 8px;
@@ -117,8 +117,15 @@
   .timeline .timeline-item .content {
     padding-left: 5%;
   }
+  .timeline-horizontal .timeline-item {
+    height: 150px;
+  }
   .work_process .visitor {
-    flex-flow: column wrap;
+    flex-flow: inherit;
+    flex-wrap: wrap;
+  }
+  .work_process .visitor .visitor_item {
+    flex: 1 0 48%;
   }
   .subscribe_part .bg {
     padding: 73px 9px;
@@ -133,23 +140,56 @@
   .subscribe_part .bg {
     background: url(../images/about/about_bg_mob.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
   }
   .subscribe_part button {
     padding: 12px 29px;
     margin-top: 82px;
   }
+  .pricing_part .custom_container {
+    max-width: 720px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .platform_expert .service-provide .service-provide-item:nth-child(1) {
+    grid-column: 2;
+  }
+  .car_parking_app .car_parking_slider .car_parking_slider_item img {
+    margin: 0 auto;
+  }
   #footer {
     background: var(--footer);
   }
-  .tiny_footer ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+  .tiny_footer .nav_link {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 575px) {
+  .platform_expert .service-provide .service-provide-item:nth-child(1) {
+    grid-column: 1;
+  }
+  .platform_expert .service-provide .service-provide-item .overlay h2 {
+    font-size: 28px;
+  }
+  .platform_expert .service-provide .service-provide-item .overlay p {
+    font-size: 12px;
+  }
+  .pricing_part .custom_container {
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about_gellary .service-provide {
+    grid-template-columns: repeat(1, auto);
+  }
   .timeline:before {
     left: 2%;
     transform: translateX(-3%);
@@ -164,6 +204,11 @@
   }
   .timeline .timeline-item .content {
     padding-left: 10%;
+  }
+  .tiny_footer ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
   }
 }
 @media screen and (max-width: 425px) {

@@ -1,8 +1,7 @@
 /* Presetup project  */
 
 * {
-  margin: 0px;
-  padding: 0px;
+  scroll-behavior: smooth;
 }
 #main {
   overflow: hidden !important;
@@ -15,7 +14,14 @@ ul {
   padding: 0px;
   list-style-type: none;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
 :root {
   --Primary: #1a64ee;
   --Primary-1: #085bd8;

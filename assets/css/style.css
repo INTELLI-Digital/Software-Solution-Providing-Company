@@ -1,3 +1,8 @@
+#navbar {
+  background: #fff;
+  z-index: 10;
+}
+
 #footer .col-md-6.border-end {
   border-right: 1px solid rgba(86, 87, 88, 0.21) !important;
 }
@@ -17,12 +22,24 @@
 @keyframes float {
   0% {
     transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+    -moz-transform: translatey(0px);
+    -ms-transform: translatey(0px);
+    -o-transform: translatey(0px);
   }
   50% {
-    transform: translatey(-20px);
+    transform: translatey(20px);
+    -webkit-transform: translatey(20px);
+    -moz-transform: translatey(20px);
+    -ms-transform: translatey(20px);
+    -o-transform: translatey(20px);
   }
   100% {
     transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+    -moz-transform: translatey(0px);
+    -ms-transform: translatey(0px);
+    -o-transform: translatey(0px);
   }
 }
 
@@ -1040,101 +1057,6 @@
 
 /* mobile app development page */
 
-/* #button {
-  display: inline-block;
-  position: fixed;
-  bottom: 30px;
-  color: #fff;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -moz-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -ms-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  overflow: hidden;
-}
-#button span {
-  background: #1a64ee;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#button p {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
-  width: 0px;
-  height: 60px;
-  background: #4a89ff;
-  box-shadow: 0px 0px 30px rgb(132 132 132 / 39%);
-  border-radius: 36px;
-  position: absolute;
-  top: 0;
-  right: -0px;
-  display: flex;
-  align-items: center;
-  z-index: -1;
-  padding-left: 14px;
-  opacity: 0;
-  visibility: hidden;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -moz-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -ms-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-}
-#button:hover p {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
-  width: 175px;
-  height: 60px;
-  background: #4a89ff;
-  box-shadow: 0px 0px 30px rgb(132 132 132 / 39%);
-  border-radius: 36px;
-  position: absolute;
-  top: 0;
-  left: -116px;
-  display: flex;
-  align-items: center;
-  z-index: -1;
-  padding-left: 14px;
-  opacity: 1;
-  visibility: visible;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -moz-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -ms-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  -o-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-}
-
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
-#button.show:hover {
-  opacity: 1;
-  visibility: visible;
-  overflow: auto;
-} */
 .social {
   position: fixed;
   bottom: 30px;

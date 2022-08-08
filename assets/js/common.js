@@ -15,8 +15,6 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 6,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true,
         },
       },
       {
@@ -42,7 +40,7 @@ $(document).ready(function() {
     infinite: true,
     speed: 300,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     dots: true,
     slidesToShow: 4,
@@ -52,6 +50,15 @@ $(document).ready(function() {
         settings: {
           slidesToShow: 4,
           slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '40px',
         },
       },
       {
@@ -163,6 +170,22 @@ $(document).ready(function() {
         }
       );
   });
+
+
+  // sticky nav
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  // sticky nav
   
 
   // external js: isotope.pkgd.js
