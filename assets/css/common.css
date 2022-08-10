@@ -4,7 +4,7 @@
   scroll-behavior: smooth;
 }
 #main {
-  overflow: hidden !important;
+  /* overflow: hidden !important; */
 }
 a {
   text-decoration: none;
