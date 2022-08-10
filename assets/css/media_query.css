@@ -220,4 +220,16 @@
     -ms-transform: translateX(-3%);
     -o-transform: translateX(-3%);
   }
+  .car_parking_app .car_parking_slider .car_parking_slider_item {
+    margin: 0 20px;
+  }
+  .car_parking_app .car_parking_slider .car_parking_slider_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
 }

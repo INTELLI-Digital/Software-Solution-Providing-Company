@@ -983,6 +983,7 @@
 }
 .car_parking_app .car_parking_slider .car_parking_slider_item img {
   border-radius: 18.114px;
+  margin: 0 auto;
 }
 
 .car_parking_app .car_parking_slider .car_parking_slider_item:nth-child(odd) {
