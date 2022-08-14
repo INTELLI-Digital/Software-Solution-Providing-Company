@@ -206,9 +206,17 @@
     padding-left: 10%;
   }
   .tiny_footer ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+    columns: 2 !important;
+    -webkit-columns: 2 !important;
+    -moz-columns: 2 !important;
+    flex-wrap: wrap;
+  }
+  .social ul {
+    transform: translateX(90px);
+    -webkit-transform: translateX(90px);
+    -moz-transform: translateX(90px);
+    -ms-transform: translateX(90px);
+    -o-transform: translateX(90px);
   }
 }
 @media screen and (max-width: 425px) {
