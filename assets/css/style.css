@@ -406,12 +406,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 64px;
   padding-top: 40px;
   padding-bottom: 64px;
 }
 .platform_expert .tab-content .tab-pane .tab-item-part .tab-item {
   text-align: center;
+  padding: 0px 14px;
 }
 .platform_expert .tab-content .tab-pane .tab-item-part .tab-item img {
   max-width: 56px;
