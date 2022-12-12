@@ -10,6 +10,6 @@ $(document).ready(function() {
       $('#preloader').delay(500).queue(function() {
         $(this).remove();
       });}
-  }, 2000);
+  }, 1500);
 
 });
